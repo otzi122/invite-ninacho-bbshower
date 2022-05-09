@@ -1,0 +1,229 @@
+@font-face {
+  font-family: 'BabyBoss';
+  src: url('font/BabyBoss.eot'); /* IE9 Compat Modes */
+  src: url('font/BabyBoss.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('font/BabyBoss.woff2') format('woff2'), /* Super Modern Browsers */
+       url('font/BabyBoss.woff') format('woff'), /* Pretty Modern Browsers */
+       url('font/BabyBoss.ttf')  format('truetype'), /* Safari, Android, iOS */
+       url('font/BabyBoss.svg#BabyBossRegular') format('svg'); /* Legacy iOS */
+}
+
+/*.bd-placeholder-img {
+	font-size: 1.125rem;
+	text-anchor: middle;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+}
+
+@media (min-width: 768px) {
+	.bd-placeholder-img-lg {
+	  font-size: 3.5rem;
+	}
+}*/
+
+h1, h2, h3{
+	font-family: 'BabyBoss', sans-serif;
+	color: #019CD4;
+}
+
+p, h4{
+	font-family: 'Open Sans', sans-serif;
+	color: #444;
+	text-transform: uppercase;
+}
+
+a{
+	text-decoration: none !important;
+	font-weight: 700;
+	color: #444;
+}
+
+img{
+	max-width: 100%;
+}
+
+#main, #header{
+	position: relative;
+	z-index: 999
+}
+
+.page{
+	display: flex;
+	z-index: 1;
+	position: relative;
+}
+
+.page-1{
+	background: url('img/bg_1.png') center/150px;
+	position: relative;
+	overflow: hidden;
+}
+
+.page-1:after{
+	content: '';
+	position: absolute;
+	display: block;
+	top: -20%;
+	width: 100vw;
+	height: 50vh;
+	transform: rotate(20deg) scale(2);
+	background: repeating-linear-gradient( 
+		0deg, 
+		#ABEEFF, 
+		#ABEEFF 20px, 
+		#FAFAFA 0px, 
+		#FAFAFA 40px 
+		);
+}
+
+#page-1:before{
+	position: absolute;
+	content: '';
+	display: block;
+	width: 96%;
+	height: 96%;
+	border: 4px #444 dashed;
+	box-sizing: border-box;
+	z-index: -1;
+	top: 2%;
+	left: 2%;
+}
+
+#page-1:after{
+	position: absolute;
+	content: '';
+	display: block;
+	width: 100%;
+	height: 100%;
+	background: #FFF;
+	box-sizing: border-box;
+	z-index: -2;
+	left: 0;
+	top: 0;
+}
+
+.page-2{
+	background-color: #FFF !important;
+}
+
+#page-2 ul{
+	list-style: none;
+}
+
+#page-2 ul li{
+	clear: both;
+}
+
+#page-2 ul li a{
+	font-size: 14px
+	padding: 10px;
+	text-transform: uppercase;
+}
+
+#page-2 ul li a i{
+	font-size: 43px;
+	float: left;
+	margin: 9px;
+}
+
+.page-3{
+	background-color: #FFF !important;
+}
+
+#ninacho-1{
+	position: absolute;
+	bottom: 0;
+	left: 0;
+}
+
+#ninacho-2{
+	position: absolute;
+    bottom: 0;
+    right: 0;
+    max-width: 55%;
+}
+
+#ninacho-3{
+	position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
+
+/* General button style (reset) */
+.bttn {
+	border: none;
+	font-family: inherit;
+	font-size: inherit;
+	color: inherit;
+	background: none;
+	cursor: pointer;
+	padding: 20px 50px;
+	display: inline-block;
+	margin: 15px 30px;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	font-weight: 700;
+	outline: none;
+	position: relative;
+	-webkit-transition: all 0.3s;
+	-moz-transition: all 0.3s;
+	transition: all 0.3s;
+}
+
+.bttn:after {
+	content: '';
+	position: absolute;
+	z-index: -1;
+	-webkit-transition: all 0.3s;
+	-moz-transition: all 0.3s;
+	transition: all 0.3s;
+}
+
+/* Button 8 */
+.perspective {
+	-webkit-perspective: 800px;
+	-moz-perspective: 800px;
+	perspective: 800px;
+	display: inline-block;
+}
+
+.btn-8 {
+	display: inline-block;
+	text-decoration: none !important;
+	background: #5cbcf6;
+	outline: 1px solid transparent; /* FF jagged edges fix */
+	-webkit-transform-style: preserve-3d;
+	-moz-transform-style: preserve-3d;
+	transform-style: preserve-3d;
+}
+
+.btn-8:active {
+	background: #55b7f3;
+}
+
+/* Button 8d */
+.btn-8d:after {
+	width: 20%;
+	height: 100%;
+	left: 100%;
+	top: 0;
+	background: #49a7df;
+	-webkit-transform-origin: 0% 0%;
+	-webkit-transform: rotateY(90deg);
+	-moz-transform-origin: 0% 0%;
+	-moz-transform: rotateY(90deg);
+	-ms-transform-origin: 0% 0%;
+	-ms-transform: rotateY(90deg);
+	transform-origin: 0% 0%;
+	transform: rotateY(90deg);
+}
+
+.btn-8d:hover {
+	-webkit-transform: rotateY(-15deg);
+	-moz-transform: rotateY(-15deg);
+	-ms-transform: rotateY(-15deg);
+	transform: rotateY(-15deg);
+}

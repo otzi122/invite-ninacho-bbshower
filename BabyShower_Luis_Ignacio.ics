@@ -1,0 +1,32 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//ical.marudot.com//iCal Event Maker
+X-WR-CALNAME:BabyShower Luis Ignacio
+CALSCALE:GREGORIAN
+BEGIN:VTIMEZONE
+TZID:America/Argentina/Buenos_Aires
+TZURL:http://tzurl.org/zoneinfo-outlook/America/Argentina/Buenos_Aires
+X-LIC-LOCATION:America/Argentina/Buenos_Aires
+BEGIN:STANDARD
+TZOFFSETFROM:-0300
+TZOFFSETTO:-0300
+TZNAME:-03
+DTSTART:19700101T000000
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+DTSTAMP:20190408T041908Z
+UID:20190408T041908Z-333180569@masrudot.com
+DTSTART;TZID=America/Argentina/Buenos_Aires:20190504T170000
+DTEND;TZID=America/Argentina/Buenos_Aires:20190504T230000
+SUMMARY:BabyShower Luis Ignacio
+URL:bit.ly%2Fninacho
+DESCRIPTION:Celebra con nosotros la pronta llegada de nuestro bebe
+LOCATION:amunategui 695\, santiago
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:BabyShower Luis Ignacio
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR
